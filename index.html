@@ -95,6 +95,14 @@ h1,h2,h3{font-family:"Barlow Semi Condensed",Arial,sans-serif;font-weight:700;te
 @media(max-width:420px){#calc{grid-template-columns:minmax(0,1fr)}#calc>.check{min-height:34px}}
 footer .footer-inner>p,footer .footer-links>a{font-size:12px;line-height:1.45}
 footer .credit>a{font-size:11px;line-height:1.45}
+
+/* Give the original bottle photographs more breathing room. */
+.bottles img{height:clamp(210px,21vw,318px)}
+.product img{height:clamp(125px,13vw,190px)}
+@media(max-width:750px){
+ .bottles img{height:auto;max-height:min(43vw,205px);width:91%;justify-self:center}
+ .product img{height:clamp(85px,27vw,140px)}
+}
 </style>
 </head>
 <body>
